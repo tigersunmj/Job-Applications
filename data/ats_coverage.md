@@ -1,0 +1,412 @@
+# Official-site coverage
+
+Auto-generated. **88 / 403** companies have a job board the bot can read automatically. The rest use a system it can't read (or it couldn't find one) — those are still covered whenever they show up on the SimplifyJobs feed, but check their sites by hand now and then. To add one manually, put it in `data/ats_overrides.json`.
+
+## ✅ Monitored
+
+- TGS — `lever:tgsmc`
+- XTX Markets — `greenhouse:xtxmarketstechnologies`
+- PDT Partners — `greenhouse:pdtpartners`
+- Quadrature Capital — `greenhouse:quadraturecapital`
+- HRT — `greenhouse:hrttalentcommunity`
+- Headlands Technologies — `greenhouse:headlandstechnologiesllc`
+- Jump Trading — `greenhouse:talent_community`
+- Radix Trading — `greenhouse:radixuniversity, greenhouse:radixexperienced`
+- The Voleon Group — `ashby:voleon`
+- Five Rings Capital — `greenhouse:fiveringsllc`
+- Optiver — `greenhouse:tradingacademy2025`
+- Tower Research Capital — `greenhouse:towerresearchcapital`
+- Xantium — `greenhouse:xantium, greenhouse:xant`
+- Schonfeld — `greenhouse:schonfeld`
+- Old Mission Capital — `greenhouse:oldmissioncapital`
+- Vatic Investments — `greenhouse:vaticlabs`
+- Virtu — `greenhouse:virtu`
+- Man Numeric — `workday:mangroupplc:Man_Group_Careers`
+- Akuna Capital — `greenhouse:akunacapital`
+- Flow Traders — `greenhouse:flowtraders`
+- Maven Securities — `greenhouse:mavensecuritiesholdingltd`
+- Teza Technologies — `ashby:teza-technologies`
+- Belvedere Trading — `lever:belvederetrading`
+- Gelber Group — `greenhouse:gelbergroup`
+- TransMarket Group — `greenhouse:transmarketgroup`
+- AlphaSimplex — `workday:virtus:VirtusCareers`
+- GMO — `lever:gmo`
+- PanAgora Asset Management — `workday:empower:PanAgora`
+- Graham Capital — `greenhouse:grahamcapitalmanagement`
+- Tudor Investments — `greenhouse:tudorgroup`
+- Sculptor Capital Management — `workday:sculptor:Sculptor_External_Career_Site`
+- GAM Systematic — `workday:gam:GAM`
+- Quantbot Technologies — `greenhouse:quantbot-technologies`
+- Walleye Capital — `greenhouse:walleyecapital-external-students, greenhouse:walleyecapital-external-fulltime`
+- BHFT — `smartrecruiters:BHFT`
+- Boerboel Trading — `greenhouse:boerboeltrading`
+- Everhaven Securities — `greenhouse:everhavensecuritiesllc`
+- Geneva Trading — `greenhouse:genevatrading`
+- Trillium Trading — `greenhouse:trillium`
+- AllianceBernstein — `workday:abglobal:alliancebernsteincareers`
+- Ameriprise Financial Services — `workday:ameriprise:Ameriprise`
+- Brown Brothers Harriman — `workday:bbh:BBH`
+- Capital Group — `workday:capgroup:capitalgroupcareers`
+- Dodge & Cox — `workday:dodgeandcox:Dodgecox`
+- GAM Investments — `workday:gam:GAM`
+- John Hancock Investment Management — `workday:manulife:MFCJH_Jobs`
+- Kayne Anderson Rudnick — `workday:virtus:KayneCareers`
+- MFS Investment Management — `workday:mfs:MFS-Careers`
+- Moelis Asset Management — `workday:moelis:Experienced-Hires`
+- PIMCO — `workday:pimco:pimco-careers`
+- Russell Investments — `workday:russell:russellinvestments`
+- T. Rowe Price — `workday:troweprice:TRowePrice, workday:troweprice:TRowePriceInternational`
+- Wellington Management — `workday:wellington:External`
+- Western Asset Management — `workday:franklintempleton:Jobs-WAM`
+- Wilshire Advisors — `smartrecruiters:WilshireAdvisorsLLC`
+- Discover — `workday:capitalone:Capital_One`
+- U.S. Bank — `workday:usbank:US_Bank_Careers`
+- Accenture — `workday:accenture:AccentureCareers`
+- Cornerstone Research — `workday:cornerstone:CornerstoneResearch_Careers`
+- Deloitte — `lever:deloitte, workday:deloitteie:Experienced_Professionals, smartrecruiters:Deloitte6`
+- B2C2 — `greenhouse:b2c2`
+- Galaxy Digital — `greenhouse:galaxydigitalservices`
+- Kraken — `ashby:kraken.com`
+- Paradigm — `greenhouse:trueanomalyinc, greenhouse:taxbit, greenhouse:d3, greenhouse:mesh, greenhouse:cosmoslabs, lever:moonpay, lever:gauntlet, ashby:kalshi, ashby:Antares, ashby:tempo-xyz, ashby:chainalysis-careers, ashby:symbiotic, ashby:phantom, ashby:ellipsislabs, ashby:morpho, ashby:monad.foundation, ashby:magiceden, ashby:lightspark, ashby:skymavis, ashby:uniswap, ashby:category-labs, ashby:DivineResearch, ashby:axiom, ashby:Paradigm, ashby:ventuals, ashby:pluralfinance, ashby:noise-labs, ashby:andromeda, ashby:OpenSea, ashby:Hang, ashby:Conduit, ashby:Hyperliquid%20Labs, ashby:succinct`
+- Wintermute — `lever:wintermute-trading`
+- Cross River Bank — `greenhouse:crossriverbank`
+- FIS — `workday:fis:SearchJobs`
+- TIFIN — `greenhouse:tifin`
+- Wealthfront — `lever:wealthfront`
+- iCapital — `greenhouse:icapitalnetwork`
+- Viking Global Investors — `greenhouse:vikingglobalinvestors`
+- AIG — `workday:aig:aig`
+- Guardian Life Insurance — `workday:guardianlife:Guardian-Life-Careers`
+- RGA — `workday:rgare:Careers`
+- Travelers Companies — `workday:travelers:External`
+- Citi — `workday:citi:2`
+- Mitsubishi UFJ Financial Group — `workday:mufgub:MUFG-Careers`
+- Mizuho — `workday:mizuho:mizuhoamericas`
+- TD Bank — `workday:td:TD_Bank_Careers`
+- Capital Group (Portfolio Analytics) — `workday:capgroup:capitalgroupcareers`
+- Fannie Mae — `workday:fanniemae:FannieMaeCareers`
+- Freddie Mac — `workday:freddiemac:External`
+- KBRA — `greenhouse:krollbondratingagency`
+- Murex — `workday:murex:MurexCareerPage1`
+- Voya Investment Management — `workday:godirect:voya_jobs`
+- Davidson Kempner Capital Management — `greenhouse:1456754456yhgbhfg`
+- Kroll Bond Rating Agency — `greenhouse:krollbondratingagency`
+- D.A. Davidson & Co. — `lever:dadavidson`
+
+## ⚠️ Not monitored (check manually)
+
+- Renaissance — https://www.rentec.com/Careers.action?jobs=true
+- Citadel — https://www.citadel.com/careers/students/
+- D.E. Shaw — https://www.deshaw.com/careers
+- Citadel Securities — https://www.citadelsecurities.com/careers/students/
+- Jane Street — https://www.janestreet.com/join-jane-street/
+- Millennium — https://www.mlp.com/careers/students/
+- Point72 — https://www.point72.com/careers/
+- G-Research — https://www.gresearch.com/careers/
+- Two Sigma — https://www.twosigma.com/careers/
+- DRW — https://drw.com/work-at-drw
+- IMC Trading — https://www.imc.com/us/careers
+- SIG — https://sig.com/careers/early-talent/
+- Arrowstreet Capital — https://www.arrowstreetcapital.com/careers/
+- Marshall Wace — https://www.mwam.com/careers/
+- Ansatz Capital — https://www.ansatz.com/
+- Aquatic Capital — https://aquatic.com/careers/
+- Engineers Gate — https://www.eglp.com/careers
+- GSA Capital — https://www.gsacapital.com/careers/
+- Qube Research & Technologies — https://www.qube-rt.com/careers
+- SquarePoint Capital — https://www.squarepoint-capital.com/careers
+- Balyasny Asset Management — https://www.bam.com/careers/
+- ExodusPoint Capital — https://www.exoduspoint.com/careers
+- Verition — https://www.verition.com/careers/
+- AQR — https://www.aqr.com/careers
+- CFM (Capital Fund Management) — https://www.cfm.com/careers/
+- Voloridge — https://www.voloridge.com/careers
+- Chicago Trading Company — https://www.chicagotrading.com/careers/
+- Quantlab — https://www.quantlab.com/careers/
+- Trexquant Investment LP — https://www.trexquant.com/
+- DV Trading — https://www.dvtrading.co/careers
+- Group One Trading — https://www.group1.com/careers/
+- Peak 6 — https://www.peak6.com/careers/
+- Scientech — no link
+- Valkyrie Trading — https://www.valkyrietrading.com/careers
+- Wolverine Trading — https://www.wolve.com/careers
+- XR Trading — https://www.xrtrading.com/careers/
+- Acadian Asset Management — https://www.acadian-asset.com
+- Dimensional — https://www.dimensional.com
+- Quantitative Management Associates — https://www.pgimquantitativesolutions.com
+- Robeco Institutional Asset Management US — https://www.robeco.com
+- Crabel Capital Management — https://crabel.com/
+- Millburn Ridgefield — https://millburn.com/
+- Quest Partners — https://questpartners.com/
+- Stevens Capital Management — https://www.scm-lp.com/
+- Systematica Investments — https://www.systematica.com/
+- Winton Group — https://www.winton.com/
+- Alphadyne Asset Management — https://adyne.com/
+- Bluecrest Capital — https://www.bluecrestcapital.com/
+- Brevan Howard — https://www.brevanhoward.com/
+- Bridgewater — https://www.bridgewater.com/
+- Caxton Associates — https://www.caxton.com/
+- Moore Capital — https://www.moorecap.com/
+- Centiva Capital — http://www.centivacapital.com
+- Eisler Capital — https://eislercapital.com
+- HBK — https://www.hbk.com
+- Magnetar Capital — https://www.magnetar.com
+- North Rock Capital — https://www.northrockllc.com
+- Blueshift Asset Management — https://www.blueshift.am
+- Edgestream — https://www.edgestreamlp.com
+- Entropy Technologies — https://www.entropy-technologies.com
+- Kepos Capital — https://www.keposcapital.com
+- Laurion Capital — https://www.laurioncap.com
+- Qsemble Capital Management — https://www.qsemble.com
+- Quantedge — https://www.quantedge.com
+- R. G. Niederhoffer Capital Management — https://www.niederhoffer.com
+- WorldQuant — https://www.worldquant.com
+- 3Red Partners — https://www.3redpartners.com
+- Athena Capital Research — http://www.athenacr.com
+- Bluefin Capital Management — https://www.bfcm.com
+- Cognitive Capital — https://www.cogcap.com
+- Consolidated Trading — https://prod.consolidatedtrading.com
+- Edgehog Trading — https://www.edgehogtrading.com
+- Elk Capital Markets — https://elkcapitalmarkets.com
+- GTS — https://gtsx.com
+- HAP Capital — https://www.hap-capital.com
+- HC Tech LLC — http://www.hctech.com
+- Prime Trading — https://www.prime-trading.com
+- Sunrise Futures — https://www.sunrisefutures.com
+- TradeLink Holdings LLC — https://tradelinkllc.com
+- Volant Trading — https://volanttrading.com
+- WH Trading — http://whtrading.com
+- Advisors Asset Management — https://www.aamlive.com
+- Alger — https://www.alger.com
+- Allspring Global Investments — https://www.allspringglobal.com
+- Amundi Asset Management — https://about.amundi.com
+- Ares Management — https://www.aresmgmt.com
+- Barings — https://www.barings.com
+- BlackRock — https://www.blackrock.com
+- Brandywine Global Investment Management — https://www.brandywineglobal.com
+- Causeway Capital Management — https://www.causewaycap.com
+- Charles Schwab — https://www.schwab.com
+- Cohen & Steers — https://www.cohenandsteers.com
+- Columbia Threadneedle Investments — https://www.columbiathreadneedleus.com
+- DoubleLine Capital — https://www.doubleline.com
+- Dreyfus Theoharidis Value Advisors — https://www.dtvadvisors.com
+- Epoch Investment Partners — https://www.eipny.com
+- Federated Hermes — https://www.federatedhermes.com
+- Fidelity — https://www.fidelity.com
+- Franklin Templeton Investments — https://www.franklintempleton.com
+- GAMCO Investors — https://www.gabelli.com
+- GIC — https://www.gic.com.sg
+- Invesco — https://www.invesco.com
+- Janus Henderson Investors — https://www.janushenderson.com
+- Jennison Associates — https://www.jennison.com
+- Lazard Asset Management — https://www.lazardassetmanagement.com
+- Legg Mason — https://www.leggmason.com
+- Liberty Mutual Investments — https://business.libertymutualgroup.com
+- Lord Abbett — https://www.lordabbett.com
+- MacKay Shields — https://www.mackayshields.com
+- Megapro Corporation — https://www.megapro.com/
+- Mirae Asset Global Investments — https://www.am.miraeasset.com
+- Neuberger Berman — https://www.nb.com
+- Newfleet Asset Management — https://www.newfleet.com
+- Northern Trust Asset Management — https://www.northerntrust.com/asset-management
+- Nuveen — https://www.nuveen.com
+- Osterweis Capital Management — https://www.osterweis.com
+- PGIM — https://www.pgim.com
+- PineBridge Investments — https://www.pinebridge.com
+- Principal Investment Management — https://www.principal.com
+- Putnam Investments — https://www.putnam.com
+- Schroders — https://www.schroders.com
+- State Street Global Advisors — https://www.ssga.com
+- Sun Life Investment Management — https://www.sunlife.com/us/en/solutions/asset-management/
+- TCW Group — https://www.tcw.com
+- Vanguard — https://www.vanguard.com
+- AVM LP — https://www.avmlp.com/
+- Cantor Fitzgerald — https://www.cantor.com/
+- Federated Securities Corp. — https://federatedsecurities.com/
+- BNY Mellon — https://www.bny.com/corporate/global/en.html
+- Capital One — https://www.capitalone.com
+- Citizens Bank — https://www.citizensbank.com
+- Fifth Third Bank — https://www.53.com
+- First Republic Bank — https://www.firstrepublic.com
+- Heartland Financial — https://www.htlf.com
+- KeyBank — https://www.key.com
+- Lloyds Bank — https://www.lloydsbank.com
+- NatWest — https://www.natwest.com
+- National Bank Holdings — https://www.nationalbankholdings.com
+- PNC Financial Service — https://www.pnc.com
+- Standard Chartered Bank — https://www.sc.com/en/
+- Truist — https://www.truist.com
+- UniCredit — https://www.unicreditgroup.eu/en.html
+- Zions Bank — https://www.zionsbank.com
+- Alvarez & Marsal — https://www.alvarezandmarsal.com
+- Analysis Group — https://www.analysisgroup.com
+- Bain & Company — https://www.bain.com
+- Boston Consulting Group (BCG) — https://www.bcg.com
+- Capco — https://www.capco.com
+- Charles River Associates — https://www.crai.com
+- DIA Associates — https://www.diaassociates.com
+- Edgeworth Economics — https://www.edgewortheconomics.com
+- Ernst & Young — https://www.ey.com
+- Fitch Ratings — https://www.fitchratings.com
+- KPMG — https://kpmg.com
+- Kearney — https://www.kearney.com
+- McKinsey — https://www.mckinsey.com
+- NERA Economic Consulting — https://www.nera.com
+- Roland Berger — https://www.rolandberger.com
+- Amber Group — https://www.ambergroup.io
+- Apifiny — https://www.apifiny.com
+- Bitwise Asset Management — https://bitwiseinvestments.com
+- Circle — https://www.circle.com
+- Coinbase — https://www.coinbase.com
+- GSR — https://www.gsr.io
+- Genesis Trading — https://genesistrading.com
+- Grayscale Investments — https://www.grayscale.com
+- Linden Shore — https://www.lindenshore.com
+- OpenSea — https://opensea.io
+- Ripple — https://ripple.com
+- Uniswap — https://uniswap.org
+- dYdX — https://dydx.exchange
+- Affirm — https://www.affirm.com
+- Apex Fintech Solutions — https://apexfintechsolutions.com
+- Arcesium — https://www.arcesium.com
+- Avaloq Group — https://www.avaloq.com
+- Axioma — https://axioma-corp.com
+- Betterment — https://www.betterment.com
+- BlockFi — https://restructuring.ra.kroll.com/blockfi/
+- Bloomberg L.P. — https://www.bloomberg.com/company/
+- Blue Chip Financial Services — https://bluechipfinancial.com
+- Brex — https://www.brex.com
+- Chime — https://www.chime.com
+- Coinbase — https://www.coinbase.com
+- Credit Karma — https://www.creditkarma.com
+- Intuit — https://www.intuit.com
+- Klarna — https://www.klarna.com
+- M Science — https://www.mscience.com
+- MerQube — https://www.merqube.com
+- PayPal — https://www.paypal.com
+- Plaid — https://plaid.com
+- Revolut — https://www.revolut.com
+- Robinhood — https://robinhood.com
+- SoFi — https://www.sofi.com
+- Square — https://squareup.com
+- Stripe — https://stripe.com
+- Webull Financial — https://www.webull.com
+- Wise — https://wise.com
+- eToro — https://www.etoro.com
+- Coatue — https://www.coatue.com
+- D1 Capital — https://www.d1capital.com
+- Eminence Capital — https://www.eminencecapital.com
+- Farallon Capital Management — https://www.faralloncapital.com
+- Freestone Grove Partners — https://fgrovep.com
+- Junto Capital — https://www.juntocap.com
+- Light Street — https://lightstreet.com
+- Lone Pine — https://www.lonepinecapital.com
+- Maverick Capital — https://www.maverickcap.com
+- Perceptive — https://www.perceptivelife.com
+- Tiger Global — https://www.tigerglobal.com
+- Whale Rock — https://www.whalerockcapital.com
+- AIA Group — https://www.aia.com/en
+- AXA — https://www.axa.com/
+- Aflac Global Investments — https://www.aflac.com
+- Allianz Life Insurance Company — https://www.allianzlife.com/
+- American Credit Acceptance — https://americancreditacceptance.com/
+- American Family Insurance — https://www.amfam.com/
+- American Financial Group — https://www.afginc.com/
+- Chubb Insurance — https://www.chubb.com/us-en/
+- Constellation Insurance — https://constellationinsurance.com/
+- Everest Re Group — https://www.everestglobal.com/
+- Fortitude Re — https://fortitude-re.com/
+- GCG Financial — https://www.gcgwm.com/
+- Global Atlantic Financial Group — https://www.globalatlantic.com/
+- Hannover Re — https://www.hannover-re.com/
+- Liberty Mutual — https://www.libertymutual.com/
+- Lloyd's of London — https://www.lloyds.com/
+- MetLife — https://www.metlife.com/
+- Munich Re — https://www.munichre.com/
+- New York Life Insurance Company — https://www.newyorklife.com/
+- Northwestern Mutual — https://www.northwesternmutual.com/
+- Prudential Financial — https://www.prudential.com/
+- SCOR SE — https://www.scor.com/
+- Swiss Re — https://www.swissre.com/
+- TIAA — https://www.tiaa.org/
+- Zurich Insurance Company — https://www.zurich.com/
+- ABN AMRO Securities (USA) — https://www.abnamro.com/en/home
+- BMO Capital Markets — https://capitalmarkets.bmo.com/en/
+- BNP Paribas — https://group.bnpparibas/en/
+- Bank of America — https://www.bankofamerica.com/
+- Barclays — https://home.barclays/
+- Cantor Fitzgerald — https://www.cantor.com/
+- Cowen — https://cowengroup.com/
+- Credit Suisse — https://www.credit-suisse.com/us/en.html
+- Credit Agricole Group — https://www.credit-agricole.com/en
+- Daiwa Capital Markets America — https://us.daiwacm.com/
+- Deutsche Bank — https://www.db.com/index
+- Goldman Sachs — https://www.goldmansachs.com/
+- JMP Securities — https://www.jmpsecurities.com/
+- JP Morgan Chase — https://www.jpmorganchase.com/
+- Jefferies — https://www.jefferies.com/
+- Keefe Bruyette & Woods — https://www.kbw.com/
+- Ladenburg Thalmann — https://www.ladenburg.com/
+- Macquarie Capital (USA) — https://www.macquarie.com/us/en.html
+- Maxim Group — https://www.maximgrp.com/
+- Morgan Stanley — https://www.morganstanley.com/
+- Natixis — https://www.natixis.com
+- Needham & Company — https://www.needhamco.com/
+- Nomura — https://www.nomura.com/
+- Oppenheimer & Co. — https://www.oppenheimer.com/
+- RBC — https://www.rbc.com/
+- RBS — https://www.rbs.com/
+- SMBC Capital Markets — https://www.smbcgroup.com/
+- UBS — https://www.ubs.com/
+- Wells Fargo — https://www.wellsfargo.com/
+- 24 Exchange — https://24exchange.com/
+- 360T — https://www.360t.com/
+- Agam Capital — https://www.agamcapital.com/
+- Applied Academics — https://www.appliedacademics.com/
+- CME Group — https://www.cmegroup.com/
+- DC Energy — https://www.dc-energy.com/
+- DTCC — https://www.dtcc.com/
+- Dow Jones — https://www.dowjones.com/
+- FICO — https://www.fico.com/en
+- FactSet — https://www.factset.com/
+- IHS Markit — https://www.spglobal.com/
+- Instinet — https://www.instinet.com/
+- Interactive Brokers — https://www.interactivebrokers.com/
+- Intercontinental Exchange (ICE) — https://www.theice.com/
+- Liquidnet — https://www.liquidnet.com/
+- Mellon Investments — https://www.mellon.com/
+- OCC — https://www.theocc.com/
+- StoneX — https://www.stonex.com/
+- Strategic Investment Management — https://www.strategicgroup.com/
+- TradeWeb — https://www.tradeweb.com/
+- Trivariate Research — https://www.trivariate.com/
+- Wolfe Research — https://www.wolferesearch.com/
+- Aristeia Capital — https://www.aristeiacapital.com/
+- Axion Group — https://axiongroup.com/
+- Axonic Capital — https://www.axoniccap.com/
+- Balbec Capital — https://balbec.com/
+- Bayview Asset Management — https://bayview.com/
+- Capula Investment Management — https://www.capulaglobal.com/
+- DC Investment Management — https://www.dcinvestmentpartners.com/
+- Ellington Management Group — https://www.ellington.com/
+- MIO Partners — https://www.miopartners.com/
+- MKP Capital Management — https://www.mkpcap.com/
+- Marathon Asset Management — https://www.marathonfund.com/
+- Mariner Investment Group — https://www.marinerinvestment.com/
+- Matrix Capital Management — https://www.linkedin.com/company/matrix-capital-management-lp
+- Napier Park Global Capital — https://www.napierparkglobal.com/
+- New Holland Capital — https://newhollandcapital.com
+- Oak Hill Advisors — https://www.oakhilladvisors.com
+- One River Asset Management — https://www.oneriveram.com
+- One William Street Capital Management — https://onewilliamstreet.com
+- Pan Capital Management — https://pancapmgmt.com
+- Quantix Commodities — https://quantixcommodities.com
+- Saba Capital Management — https://www.sabacapital.com
+- Tilden Park Capital Management — https://tildenparkcapital.com
+- Acorns — https://www.acorns.com
+- Moody's — https://www.moodys.com
+- Standard & Poor's — https://www.spglobal.com/ratings/en/
+- Edward D. Jones & Co. — https://www.edwardjones.com
+- Envestnet — https://www.envestnet.com
+- Fiduciary Trust Company International — https://www.fiduciarytrust.com
+- HighTower Securities — https://hightoweradvisors.com
