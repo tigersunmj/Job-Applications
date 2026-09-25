@@ -1,13 +1,9 @@
 """
 Fetches the current internship listings from the SimplifyJobs community board,
 filters them to postings explicitly open to Bachelor's/Master's students,
-based in the US or Canada, and posted within the last RECENCY_DAYS days, and
-updates the local tracker (data/tracked_jobs.json + APPLICATIONS.md) with any
-new matches.
-
-There's no reliable public applicant-count signal for these postings (that
-data lives behind LinkedIn's own UI, which this bot deliberately doesn't
-scrape), so we don't filter on it.
+based in the US (or Canada, if ONLY_USA is False), that look like QUANT roles,
+and posted within the last RECENCY_DAYS days, and updates the local tracker
+(data/tracked_jobs.json + APPLICATIONS.md) with any new matches.
 
 Postings that were tracked as "new" but have disappeared from the active feed
 (filled or pulled) are marked "expired" so stale issues can be auto-closed.
@@ -32,6 +28,26 @@ LISTINGS_URL = (
 NEW_MATCHES_PATH = os.path.join(os.path.dirname(__file__), "..", "new_matches.json")
 TARGET_DEGREES = {"Master's", "Bachelor's"}
 RECENCY_DAYS = 7
+
+# ---------------------------------------------------------------------------
+# Quant filter settings (edit these to change what counts as a match)
+# ---------------------------------------------------------------------------
+# Only keep US postings. Set to False to also include Canada.
+ONLY_USA = True
+
+# A posting counts as quant if its title OR its Simplify category contains
+# any of these words (case-insensitive).
+QUANT_KEYWORDS = [
+    "quant",          # also matches "quantitative"
+    "trading",
+    "trader",
+    "algorithmic",
+    "systematic",
+    "derivatives",
+    "portfolio",
+    "strats",
+]
+# ---------------------------------------------------------------------------
 
 US_STATE_ABBR = {
     "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL",
@@ -99,18 +115,28 @@ def get_countries(job: dict) -> list:
 
 
 def is_us_or_canada(job: dict) -> bool:
-    return bool(get_countries(job))
+    countries = get_countries(job)
+    if ONLY_USA:
+        return "USA" in countries
+    return bool(countries)
+
+
+def is_quant(job: dict) -> bool:
+    """True if the title or Simplify category mentions a quant keyword."""
+    text = f"{job.get('title') or ''} {job.get('category') or ''}".lower()
+    return any(kw in text for kw in QUANT_KEYWORDS)
 
 
 def is_eligible(job: dict) -> bool:
-    """Active, open to our target degrees, and US/Canada-based. Used for
-    expiry detection too, so a posting isn't wrongly marked "expired" just
-    for aging past the recency window below — only for actually disappearing
-    upstream."""
+    """Active, open to our target degrees, in the right country, and quant.
+    Used for expiry detection too, so a posting isn't wrongly marked "expired"
+    just for aging past the recency window below — only for actually
+    disappearing upstream."""
     return (
         bool(job.get("active"))
         and bool(TARGET_DEGREES & set(job.get("degrees") or []))
         and is_us_or_canada(job)
+        and is_quant(job)
     )
 
 
@@ -182,9 +208,9 @@ def main() -> None:
     with open(NEW_MATCHES_PATH, "w") as f:
         json.dump(new_matches, f, indent=2)
 
-    print(f"Fetched {len(listings)} listings, {len(eligible)} US/Canada Bachelor's/"
-          f"Master's-eligible active, {len(recent_eligible)} within last "
-          f"{RECENCY_DAYS}d, {len(new_matches)} new.", file=sys.stderr)
+    print(f"Fetched {len(listings)} listings, {len(eligible)} quant "
+          f"Bachelor's/Master's-eligible active, {len(recent_eligible)} within "
+          f"last {RECENCY_DAYS}d, {len(new_matches)} new.", file=sys.stderr)
 
     github_output = os.environ.get("GITHUB_OUTPUT")
     if github_output:
