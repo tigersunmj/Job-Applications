@@ -2,14 +2,8 @@ name: Find Internships
 
 on:
   schedule:
-    # Every 15 minutes -- GitHub's floor is 5 minutes, but that risks
-    # exceeding a private repo's free 2,000 Actions-minutes/month budget.
-    # 15 minutes is still close to real-time (there's no true "instant"
-    # here since we're polling an external feed, not receiving a push) and
-    # stays comfortably within budget. Runs can lag a little under
-    # GitHub-wide load. Only fires once this workflow lives on the repo's
-    # default branch — GitHub does not run `schedule` on other refs.
-    - cron: "*/15 * * * *"
+
+   - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
 
 permissions:
