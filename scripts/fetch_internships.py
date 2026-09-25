@@ -2,8 +2,10 @@
 Fetches the current internship listings from the SimplifyJobs community board,
 filters them to postings explicitly open to Bachelor's/Master's students,
 based in the US (or Canada, if ONLY_USA is False), that look like QUANT roles,
-and posted within the last RECENCY_DAYS days, and updates the local tracker
-(data/tracked_jobs.json + APPLICATIONS.md) with any new matches.
+and posted within the last RECENCY_DAYS days. Then checks the official career
+sites of the companies in data/target_companies.csv (see company_sites.py).
+Updates the local tracker (data/tracked_jobs.json + APPLICATIONS.md) with any
+new matches.
 
 Postings that were tracked as "new" but have disappeared from the active feed
 (filled or pulled) are marked "expired" so stale issues can be auto-closed.
@@ -20,6 +22,7 @@ import sys
 import requests
 
 from lib import load_tracked, save_tracked, render_markdown, is_big_tech
+import company_sites as cs
 
 LISTINGS_URL = (
     "https://raw.githubusercontent.com/SimplifyJobs/"
@@ -29,30 +32,13 @@ NEW_MATCHES_PATH = os.path.join(os.path.dirname(__file__), "..", "new_matches.js
 TARGET_DEGREES = {"Master's", "Bachelor's"}
 RECENCY_DAYS = 7
 
-# ---------------------------------------------------------------------------
-# Quant filter settings (edit these to change what counts as a match)
-# ---------------------------------------------------------------------------
 # Only keep US postings. Set to False to also include Canada.
 ONLY_USA = True
 
-# A posting counts as quant if its title OR its Simplify category contains
-# any of these words (case-insensitive).
-QUANT_KEYWORDS = [
-    "quant",          # also matches "quantitative"
-    "trading",
-    "trader",
-    "algorithmic",
-    "systematic",
-    "derivatives",
-    "strats",
-]
-# Titles containing any of these are skipped even if a keyword above matches
-# (e.g. "quant" also matches "Quantum", which is physics, not finance).
-EXCLUDE_KEYWORDS = [
-    "quantum",
-    "pharmacology",
-]
-# ---------------------------------------------------------------------------
+# What counts as "quant" is defined in scripts/company_sites.py
+# (STRICT_KEYWORDS for any company, BROAD_KEYWORDS for companies on your
+# list in data/target_companies.csv).
+TARGET_LOOKUP = cs.target_lookup(cs.load_targets())
 
 US_STATE_ABBR = {
     "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL",
@@ -127,13 +113,8 @@ def is_us_or_canada(job: dict) -> bool:
 
 
 def is_quant(job: dict) -> bool:
-    """True if Simplify files it under a quant category, or the title
-    mentions a quant keyword (and no excluded keyword)."""
-    title = (job.get("title") or "").lower()
-    category = (job.get("category") or "").lower()
-    if any(kw in title for kw in EXCLUDE_KEYWORDS):
-        return False
-    return "quant" in category or any(kw in title for kw in QUANT_KEYWORDS)
+    group = cs.company_group(job.get("company_name", ""), TARGET_LOOKUP)
+    return cs.quant_match(job.get("title", ""), job.get("category", ""), group)
 
 
 def is_eligible(job: dict) -> bool:
@@ -179,6 +160,7 @@ def to_record(job: dict, now: str) -> dict:
         "url": job.get("url"),
         "date_posted": date_posted_iso,
         "big_tech": is_big_tech(company),
+        "source": "simplify",
         "status": "new",
         "found_at": now,
         "applied_at": None,
@@ -198,19 +180,46 @@ def main() -> None:
     recent_eligible = [j for j in eligible if is_recent(j, now_dt)]
 
     tracked = load_tracked()
+    state = cs.load_state()
     new_matches = []
 
+    # The first time the wider "your company list" rules run, whatever they
+    # match on Simplify right now is treated as already seen (no alerts).
+    first_run = not state.get("simplify_initialized")
+    seen_simplify = set(state.get("simplify_seen", []))
+
     for job in recent_eligible:
-        if job["id"] not in tracked:
-            record = to_record(job, now)
-            tracked[job["id"]] = record
-            new_matches.append(record)
+        if job["id"] in tracked or job["id"] in seen_simplify:
+            continue
+        if first_run:
+            seen_simplify.add(job["id"])
+            continue
+        record = to_record(job, now)
+        tracked[job["id"]] = record
+        new_matches.append(record)
+    state["simplify_initialized"] = True
+    state["simplify_seen"] = sorted(seen_simplify & current_ids)
 
     for job_id, record in tracked.items():
-        if record["status"] == "new" and job_id not in current_ids:
+        if (record.get("source", "simplify") == "simplify"
+                and record["status"] == "new" and job_id not in current_ids):
             record["status"] = "expired"
             record["expired_at"] = now
 
+    # Official career sites of the companies on your list.
+    known_urls = {r.get("url") for r in tracked.values() if r.get("url")}
+    try:
+        site_records = cs.poll_company_sites(
+            cs.load_targets(), TARGET_LOOKUP, now_dt, known_urls, state)
+    except Exception as e:  # never let site polling break the Simplify part
+        print(f"Company-site polling failed: {e}", file=sys.stderr)
+        site_records = []
+    for record in site_records:
+        if record["id"] not in tracked:
+            tracked[record["id"]] = record
+            new_matches.append(record)
+
+    cs.save_state(state)
     save_tracked(tracked)
     render_markdown(tracked)
 
@@ -219,7 +228,8 @@ def main() -> None:
 
     print(f"Fetched {len(listings)} listings, {len(eligible)} quant "
           f"Bachelor's/Master's-eligible active, {len(recent_eligible)} within "
-          f"last {RECENCY_DAYS}d, {len(new_matches)} new.", file=sys.stderr)
+          f"last {RECENCY_DAYS}d, {len(new_matches)} new "
+          f"({len(site_records)} from company sites).", file=sys.stderr)
 
     github_output = os.environ.get("GITHUB_OUTPUT")
     if github_output:
