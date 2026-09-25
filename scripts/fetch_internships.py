@@ -44,8 +44,13 @@ QUANT_KEYWORDS = [
     "algorithmic",
     "systematic",
     "derivatives",
-    "portfolio",
     "strats",
+]
+# Titles containing any of these are skipped even if a keyword above matches
+# (e.g. "quant" also matches "Quantum", which is physics, not finance).
+EXCLUDE_KEYWORDS = [
+    "quantum",
+    "pharmacology",
 ]
 # ---------------------------------------------------------------------------
 
@@ -122,9 +127,13 @@ def is_us_or_canada(job: dict) -> bool:
 
 
 def is_quant(job: dict) -> bool:
-    """True if the title or Simplify category mentions a quant keyword."""
-    text = f"{job.get('title') or ''} {job.get('category') or ''}".lower()
-    return any(kw in text for kw in QUANT_KEYWORDS)
+    """True if Simplify files it under a quant category, or the title
+    mentions a quant keyword (and no excluded keyword)."""
+    title = (job.get("title") or "").lower()
+    category = (job.get("category") or "").lower()
+    if any(kw in title for kw in EXCLUDE_KEYWORDS):
+        return False
+    return "quant" in category or any(kw in title for kw in QUANT_KEYWORDS)
 
 
 def is_eligible(job: dict) -> bool:
