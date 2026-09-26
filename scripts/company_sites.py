@@ -401,6 +401,20 @@ def write_coverage(targets: list, sources: dict) -> None:
 # ---------------------------------------------------------------------------
 # Job board readers -> list of {id, title, url, location, date_posted}
 # ---------------------------------------------------------------------------
+def _norm_date(value):
+    """Any ISO-8601 timestamp (with or without a UTC offset) -> naive-UTC
+    "YYYY-MM-DDTHH:MM:SSZ", the format lib.py expects. None if unparseable."""
+    if not value:
+        return None
+    try:
+        dt = datetime.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if dt.tzinfo is not None:
+        dt = dt.astimezone(datetime.timezone.utc).replace(tzinfo=None)
+    return dt.replace(microsecond=0).isoformat() + "Z"
+
+
 def _iso_from_ms(ms):
     try:
         return datetime.datetime.utcfromtimestamp(int(ms) / 1000).isoformat() + "Z"
@@ -551,7 +565,7 @@ def poll_company_sites(targets, lookup, now, known_urls, state) -> list:
                     "countries": ["USA"] if where == "us" else [],
                     "degrees": [],
                     "url": url,
-                    "date_posted": j.get("date_posted"),
+                    "date_posted": _norm_date(j.get("date_posted")),
                     "big_tech": False,
                     "status": "new",
                     "found_at": now_iso,
