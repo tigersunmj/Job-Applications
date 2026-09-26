@@ -41,7 +41,8 @@
       "Master's",
       "PhD"
     ],
-    "expired_issue_closed": false,
+    "expired_at": "2026-09-26T09:33:22.244939Z",
+    "expired_issue_closed": true,
     "found_at": "2026-09-25T18:17:37.956397Z",
     "id": "1c5d275f-2e6f-4188-8951-f122d59a4f77",
     "issue_number": 2,
@@ -49,7 +50,7 @@
     "locations": [
       "Boston, MA"
     ],
-    "status": "new",
+    "status": "expired",
     "terms": [
       "Summer 2027"
     ],
