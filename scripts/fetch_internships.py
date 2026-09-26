@@ -67,9 +67,20 @@ CA_PROVINCE_NAMES = {
 
 
 def fetch_listings() -> list:
-    resp = requests.get(LISTINGS_URL, timeout=30)
-    resp.raise_for_status()
-    return resp.json()
+    """Downloads the Simplify feed, retrying a few times so a brief network
+    hiccup on GitHub's side doesn't fail the whole run."""
+    import time
+    last_error = None
+    for attempt in range(4):
+        try:
+            resp = requests.get(LISTINGS_URL, timeout=60)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.RequestException, ValueError) as e:
+            last_error = e
+            print(f"Simplify feed attempt {attempt + 1} failed: {e}", file=sys.stderr)
+            time.sleep(10 * (attempt + 1))
+    raise last_error
 
 
 def _location_countries(location: str) -> set:
