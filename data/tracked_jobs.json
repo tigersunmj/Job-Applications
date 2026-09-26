@@ -56,6 +56,64 @@
     "title": "Quantitative Research Intern - Multi-Asset Systematic Research Team",
     "url": "https://fmr.wd1.myworkdayjobs.com/targeted/job/200-Seaport-Blvd-Boston-MA/Quantitative-Research-Intern--Multi-Asset-Systematic-Research-Team_2135128"
   },
+  "2e7f3daf-eaeb-4204-b73c-45641a2379f4": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "American Family Insurance Group",
+    "countries": [
+      "USA"
+    ],
+    "date_posted": "2026-09-25T00:00:00Z",
+    "degrees": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T03:06:52.129846Z",
+    "id": "2e7f3daf-eaeb-4204-b73c-45641a2379f4",
+    "issue_number": 12,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/12",
+    "locations": [
+      "Madison, WI"
+    ],
+    "source": "simplify",
+    "status": "new",
+    "terms": [
+      "Winter 2026"
+    ],
+    "title": "Machine Learning Operations Intern",
+    "url": "https://amfam.wd1.myworkdayjobs.com/AmFamGroupInternCareers/job/WI-Madison/ML-Ops-Intern_R39493"
+  },
+  "3152ae06-a916-4744-ac21-2db63ab6e278": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "Charles Schwab",
+    "countries": [
+      "USA"
+    ],
+    "date_posted": "2026-09-25T22:09:06Z",
+    "degrees": [
+      "Master's"
+    ],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T03:06:52.129846Z",
+    "id": "3152ae06-a916-4744-ac21-2db63ab6e278",
+    "issue_number": 13,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/13",
+    "locations": [
+      "Southlake, TX"
+    ],
+    "source": "simplify",
+    "status": "new",
+    "terms": [
+      "Summer 2027"
+    ],
+    "title": "Model Risk Governance & Validation Intern",
+    "url": "https://career-schwab.icims.com/jobs/126262/job?mobile=true&needsRedirect=false"
+  },
   "3ffeeada-412b-4314-ad45-08e3e40c327f": {
     "applied_at": null,
     "backfilled": false,
@@ -83,6 +141,37 @@
     ],
     "title": "Quantitative Research Intern - Strategic Advisers",
     "url": "https://fmr.wd1.myworkdayjobs.com/targeted/job/Boston-MA/Strategic-Advisers-Quantitative-Research-Intern---Master-s-and-PhD-students_2135370"
+  },
+  "417baa72-1cf6-47fe-b9ee-2201b52d1846": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "American Family Insurance Group",
+    "countries": [
+      "USA"
+    ],
+    "date_posted": "2026-09-25T00:00:00Z",
+    "degrees": [
+      "Bachelor's",
+      "Master's",
+      "PhD"
+    ],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T03:06:52.129846Z",
+    "id": "417baa72-1cf6-47fe-b9ee-2201b52d1846",
+    "issue_number": 14,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/14",
+    "locations": [
+      "Madison, WI",
+      "Boston, MA"
+    ],
+    "source": "simplify",
+    "status": "new",
+    "terms": [
+      "Winter 2026"
+    ],
+    "title": "Generative AI Intern",
+    "url": "https://amfam.wd1.myworkdayjobs.com/en-US/Careers/job/WI-Madison/GenAI-Intern_R39561"
   },
   "580bd080-8355-4c59-a6d5-f4d6cc61be55": {
     "applied_at": null,
@@ -283,5 +372,29 @@
     ],
     "title": "Fixed Income & Macro Trader Intern - US",
     "url": "https://www.citadel.com/careers/details/trader-fixed-income-macro-rotational-trader-intern-us/"
+  },
+  "site:greenhouse:gelbergroup:4716779006": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "Gelber Group",
+    "countries": [
+      "USA"
+    ],
+    "date_posted": "2026-09-25T21:18:06Z",
+    "degrees": [],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T03:06:52.129846Z",
+    "id": "site:greenhouse:gelbergroup:4716779006",
+    "issue_number": 15,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/15",
+    "locations": [
+      "Chicago, IL"
+    ],
+    "source": "site",
+    "status": "new",
+    "terms": [],
+    "title": "Discretionary Trading Internship - Summer 2027",
+    "url": "https://job-boards.greenhouse.io/gelbergroup/jobs/4716779006"
   }
 }
