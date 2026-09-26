@@ -396,5 +396,71 @@
     "terms": [],
     "title": "Discretionary Trading Internship - Summer 2027",
     "url": "https://job-boards.greenhouse.io/gelbergroup/jobs/4716779006"
+  },
+  "site:workday:td:TD_Bank_Careers:/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Data-Analyst_R_1510800": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "TD Bank",
+    "countries": [],
+    "date_posted": null,
+    "degrees": [],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T04:46:36.848663Z",
+    "id": "site:workday:td:TD_Bank_Careers:/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Data-Analyst_R_1510800",
+    "issue_number": 16,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/16",
+    "locations": [
+      "Mount Laurel, New Jersey"
+    ],
+    "source": "site",
+    "status": "new",
+    "terms": [],
+    "title": "2027 Summer Internship Program - Global Technology & Solutions - Data Analyst",
+    "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Data-Analyst_R_1510800"
+  },
+  "site:workday:td:TD_Bank_Careers:/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Data-Engineer_R_1510797": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "TD Bank",
+    "countries": [],
+    "date_posted": null,
+    "degrees": [],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T04:46:36.848663Z",
+    "id": "site:workday:td:TD_Bank_Careers:/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Data-Engineer_R_1510797",
+    "issue_number": 17,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/17",
+    "locations": [
+      "Mount Laurel, New Jersey"
+    ],
+    "source": "site",
+    "status": "new",
+    "terms": [],
+    "title": "2027 Summer Internship Program - Global Technology & Solutions - Data Engineer",
+    "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Data-Engineer_R_1510797"
+  },
+  "site:workday:td:TD_Bank_Careers:/job/New-York-New-York/XMLNAME-2027-Summer-Graduate-Leadership-Internship-Program---Retail-Distribution_R_1508518-1": {
+    "applied_at": null,
+    "backfilled": false,
+    "big_tech": false,
+    "company": "TD Bank",
+    "countries": [],
+    "date_posted": null,
+    "degrees": [],
+    "expired_issue_closed": false,
+    "found_at": "2026-09-26T04:46:36.848663Z",
+    "id": "site:workday:td:TD_Bank_Careers:/job/New-York-New-York/XMLNAME-2027-Summer-Graduate-Leadership-Internship-Program---Retail-Distribution_R_1508518-1",
+    "issue_number": 18,
+    "issue_url": "https://github.com/tigersunmj/Job-Applications/issues/18",
+    "locations": [
+      "4 Locations"
+    ],
+    "source": "site",
+    "status": "new",
+    "terms": [],
+    "title": "2027 Summer Internship Graduate Leadership Program- Retail Banking Strategy & AI",
+    "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/New-York-New-York/XMLNAME-2027-Summer-Graduate-Leadership-Internship-Program---Retail-Distribution_R_1508518-1"
   }
 }
